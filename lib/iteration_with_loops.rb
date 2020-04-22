@@ -3,7 +3,7 @@ def join_nested_strings(src)
   # Combine all Strings present in the AoA into a single value and return it
   final_message = "";
   src.length.times do |index|
-    src.length.times do |index2|
+    src[index]length.times do |index2|
       if src[index][index2].is_a?(String)
         final_message = (src[index].length > index ? (final_message + src[index][index2] + " ") : (final_message + src[index][index2]));
       end
