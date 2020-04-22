@@ -5,7 +5,7 @@ def join_nested_strings(src)
   src.length.times do |index|
     src.length.times do |index2|
       if src[index][index2].kind_of?(String)
-        final_message = (src[index].length > index ? (final_message + src[index][index2] + " " : final_message + src[index][index2]);
+        final_message = (src[index].length > index ? (final_message + src[index][index2] + " ") : (final_message + src[index][index2]);
       end
     end
   end
