@@ -4,7 +4,8 @@ def join_nested_strings(src)
   final_message = "";
   src.length.times do |index|
     src.length.times do |index2|
-      if src[index][index2].is_a?
+      if src[index][index2].is_a?(String)
+        final_message + src[index][index2];
     end
   end
 end
